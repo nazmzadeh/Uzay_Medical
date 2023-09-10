@@ -394,6 +394,7 @@ select{
   13. Input
 --------------------------*/
 input[type=text],
+input[type=number],
 input[type=email],
 input[type=password]{
     width: 100%;

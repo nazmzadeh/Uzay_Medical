@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.html" />
 
     <!-- All css files are included here. -->
@@ -19,6 +19,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/plugin.css" />
     <link rel="stylesheet" href="css/default.css" />
@@ -212,209 +217,214 @@
       </div>
       <!--  End Offcanvas Mobile Menu Section -->
       <main>
-        <section class="products_section">
-          <div class="container">
-            <button id="menuButton" class="menu-button">&#9776; Menu</button>
-            <div class="row myRow">
-              <div class="col-lg-3 col-sm-12">
-                <div class="menu">
-                  <div class="widget cartegories">
-                    <ul class="products_drp_list">
-                      <li class="active">
-                        <a href="#">
-                          <i class="fa-solid fa-chevron-right"></i>
-                          <span>Diabetes</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-chevron-right"></i>
-                          <span>Pathology</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-chevron-right"></i>
-                          <span>Neonatology</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-chevron-right"></i>
-                          <span>Surgery</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-chevron-right"></i>
-                          <span>Gastroenterology</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-chevron-right"></i>
-                          <span>Radiology</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa-solid fa-chevron-right"></i>
-                          <span>Emergency Centre</span>
-                        </a>
-                      </li>
-                    </ul>
+        <section class="product_details">
+          <div class="container myContainer">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <!-- Swiper -->
+                <div class="row">
+                  <div class="col-md-12 px-0 py-2">
+                    <div class="swiper swiper_large_preview">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img class="img-fluid" src="images/indir.jpg" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img
+                              class="img-fluid"
+                              src="images/infz3-150x150.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img
+                              class="img-fluid"
+                              src="images/infz2-150x150.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img
+                              class="img-fluid"
+                              src="images/infz1-150x150.jpg"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 px-0 py-2">
+                    <div thumbsSlider="" class="swiper swiper_thumb">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img class="img-fluid" src="images/indir.jpg" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img
+                              class="img-fluid"
+                              src="images/infz3-150x150.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img
+                              class="img-fluid"
+                              src="images/infz2-150x150.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="zoom_img">
+                            <img
+                              class="img-fluid"
+                              src="images/infz1-150x150.jpg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-9 col-sm-12">
-                <div class="row">
-                  <!-- Start Single Gallery -->
-                  <div class="col-lg-4 col-md-6">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img
-                            src="./images/FRE-300x285.png"
-                            alt="Cardiology Icon"
+              <div class="col-md-6 col-sm-12">
+                <div class="summary row myRow">
+                  <h1>Basınç İnfüzyon Manşonları</h1>
+                  <div class="row myRow">
+                    <h3 class="text-success">$ 999</h3>
+                    <span>Ürün kodu : KV278.00</span>
+                  </div>
+                  <div class="lorem_text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Assumenda saepe rem sit ducimus! Placeat expedita illo
+                      aperiam sint dicta itaque temporibus sequi, porro saepe id
+                      veniam sunt vero totam atque. Commodi, quidem iusto earum
+                      vitae laboriosam harum accusamus eveniet exercitationem,
+                      molestias consequatur expedita dolorum similique pariatur
+                      quae illum soluta aliquam dolorem, deleniti ullam
+                      praesentium! Officiis quidem perspiciatis quisquam!
+                      Officiis, voluptatum?
+                    </p>
+                  </div>
+                  <div class="order">
+                    <a href="#" class="order_btn">Sipariş ver</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="order_form">
+          <div class="container myContainer">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="htc__appoinment__wrap">
+                  <h2>SİPARİŞ VER</h2>
+                  <div class="htc__appoinment__form">
+                    <form action="#" method="get">
+                      <div class="order_product_form">
+                        <div class="row myRow">
+                          <div class="col-md-6">
+                            <div class="input_inner">
+                              <input
+                                type="text"
+                                placeholder="Adınız ve Soyadınız"
+                                name="name_and_surname"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="input_inner">
+                              <input
+                                type="text"
+                                placeholder="Firma adınız"
+                                name="company_name"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row myRow">
+                          <div class="col-md-6">
+                            <div class="input_mobile_number">
+                              <div class="select">
+                                <select name="mobile_number">
+                                  <option value="1" selected>+994</option>
+                                  <option value="2">+39</option>
+                                  <option value="3">+90</option>
+                                  <option value="4">+593</option>
+                                  <option value="4">+355</option>
+                                  <option value="4">+972</option>
+                                  <option value="4">+972</option>
+                                </select>
+                              </div>
+                              <div class="number_text">
+                                <input
+                                  type="text"
+                                  placeholder="Telefon"
+                                  name="telephone"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="input_inner">
+                              <input
+                                type="email"
+                                placeholder="Email adresiniz"
+                                name="email"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row myRow">
+                          <div class="col-md-6">
+                            <div class="input_inner">
+                              <input
+                                type="text"
+                                placeholder="Adres"
+                                name="address"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="input_inner">
+                              <input
+                                type="number"
+                                placeholder="Ürün adedi"
+                                name="product_count"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="input_inner">
+                          <input
+                            type="text"
+                            name="message"
+                            placeholder="Mesaj"
+                            class="message_inp"
                           />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3>
-                          <a href="#">Medikal gaz sistemleri aksesuarları</a>
-                        </h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
+                        </div>
+                        <div class="send_btn">
+                          <button type="submit">Gönder</button>
                         </div>
                       </div>
-                    </div>
+                    </form>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img src="./images/indir-4.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3><a href="#">Tansiyon Manşon ve Hortumları</a></h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img
-                            src="./images/indir-300x285.jpg"
-                            alt="Cardiology Icon"
-                          />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3><a href="#">Basınç İnfüzyon Manşonları</a></h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img
-                            src="./images/FRE-300x285.png"
-                            alt="Cardiology Icon"
-                          />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3>
-                          <a href="#">Medikal gaz sistemleri aksesuarları</a>
-                        </h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img src="./images/indir-4.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3><a href="#">Tansiyon Manşon ve Hortumları</a></h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img
-                            src="./images/indir-300x285.jpg"
-                            alt="Cardiology Icon"
-                          />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3><a href="#">Basınç İnfüzyon Manşonları</a></h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img
-                            src="./images/indir-300x285.jpg"
-                            alt="Cardiology Icon"
-                          />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3><a href="#">Basınç İnfüzyon Manşonları</a></h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="singel_project mb--30">
-                      <div class="project_img">
-                        <a href="#">
-                          <img
-                            src="./images/FRE-300x285.png"
-                            alt="Cardiology Icon"
-                          />
-                        </a>
-                      </div>
-                      <div class="project_content">
-                        <h3>
-                          <a href="#">Medikal gaz sistemleri aksesuarları</a>
-                        </h3>
-                        <div class="read_more">
-                          <a href="#">Ürünü incele</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Single Gallery -->
-                  <!-- <a href="#" class="load_more">Daha fazla</a> -->
                 </div>
               </div>
             </div>
@@ -527,6 +537,8 @@
     <!-- Body main wrapper end -->
 
     <!-- jquery latest version -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>

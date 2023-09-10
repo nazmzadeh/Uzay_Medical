@@ -1756,7 +1756,8 @@ footer .social-links {
 }
 .sepcial_banner_content > a,
 .doctor_content .contact_btn > a,
-a.load_more {
+a.load_more,
+a.order_btn {
   border-radius: 30px;
   color: #ffffff;
   display: inline-block;
@@ -1788,7 +1789,8 @@ a.load_more {
 }
 .sepcial_banner_content > a:before,
 .doctor_content .contact_btn > a:before,
-a.load_more:before {
+a.load_more:before,
+a.order_btn:before {
   background: rgba(0, 0, 0, 0) -webkit-gradient(
       linear,
       left top,
@@ -1817,7 +1819,8 @@ a.load_more:before {
 }
 .sepcial_banner_content > a:after,
 .doctor_content .contact_btn > a:after,
-a.load_more:after {
+a.load_more:after,
+a.order_btn::after {
   background: #001430 none repeat scroll 0 0;
   border-radius: 30px;
   content: "";
@@ -1834,7 +1837,8 @@ a.load_more:after {
 }
 .sepcial_banner_content > a:hover:after,
 .doctor_content .contact_btn > a:hover:after,
-a.load_more:hover:after {
+a.load_more:hover:after,
+a.order_btn:hover:after {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
@@ -4864,10 +4868,10 @@ footer.footer_area {
   -webkit-animation: none;
   animation: none;
 }
-.doctor_appoinment_date {
+.order_product_form_date {
   position: relative;
 }
-.doctor_appoinment_date:before {
+.order_product_form_date:before {
   background: rgba(0, 0, 0, 0) -webkit-gradient(
       linear,
       left bottom,
@@ -5180,7 +5184,7 @@ a.ui-state-default {
 }
 .owl-nav div {
   position: absolute;
-  bottom: 12px;
+  bottom: 25px;
 }
 .owl-nav div i {
   font-size: 24px;
@@ -6034,8 +6038,10 @@ blockquote {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
 }
-.doctor_appoinment .nice-select {
+.order_product_form .nice-select {
   border: 1px solid #f7fbff;
   font-size: 14px;
   height: 50px;
@@ -6045,10 +6051,10 @@ blockquote {
   border-radius: 0;
   background: #f7fbff;
 }
-.doctor_appoinment > div + div {
+.order_product_form > div + div {
   margin-top: 18px;
 }
-.doctor_appoinment .input_inner > input {
+.order_product_form .input_inner > input {
   height: 50px;
   padding: 0 30px;
   line-height: 48px;
@@ -6056,20 +6062,20 @@ blockquote {
   background: #f7fbff;
   color: #999999;
 }
-.doctor_appoinment .input_inner input::-moz-placeholder,
+.order_product_form .input_inner input::-moz-placeholder,
 .appoinment_date input#datepicker::-moz-placeholder,
 .input_mobile_number input::-moz-placeholder {
   color: #999999;
 }
-.doctor_appoinment .input_inner input::-webkit-input-placeholder,
+.order_product_form .input_inner input::-webkit-input-placeholder,
 .appoinment_date input#datepicker::-webkit-input-placeholder,
 .input_mobile_number input::-webkit-input-placeholder {
   color: #999999;
 }
-.doctor_appoinment .doctor_select_inner .nice-select {
+.order_product_form .doctor_select_inner .nice-select {
   margin-bottom: 18px;
 }
-.doctor_appoinment .doctor_select_inner .nice-select .list {
+.order_product_form .doctor_select_inner .nice-select .list {
   width: 100%;
 }
 .appoinment_date input#datepicker {
@@ -6098,7 +6104,7 @@ blockquote {
   min-width: calc(100% - 110px);
   border-left: 1px solid #dcdcdc;
 }
-.doctor_appoinment .nice-select span.current {
+.order_product_form .nice-select span.current {
   font-size: 14px;
   font-weight: 400;
   color: #999;
@@ -6113,7 +6119,7 @@ blockquote {
 .input_mobile_number .nice-select .list {
   width: 100px;
 }
-.appoinment_btn > button,
+.send_btn > button,
 .error-content .go-home {
   color: #fff;
   border: none;
@@ -6128,7 +6134,7 @@ blockquote {
   position: relative;
   z-index: 1;
 }
-.appoinment_btn > button::before,
+.send_btn > button::before,
 .error-content .go-home::before {
   background: rgba(0, 0, 0, 0) -webkit-gradient(
       linear,
@@ -6155,7 +6161,7 @@ blockquote {
   width: 100%;
   z-index: -1;
 }
-.appoinment_btn > button::after,
+.send_btn > button::after,
 .error-content .go-home::after {
   background: #001430 none repeat scroll 0 0;
   border-radius: 35px;
@@ -6171,12 +6177,12 @@ blockquote {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
-.appoinment_btn > button:hover::after,
+.send_btn > button:hover::after,
 .error-content .go-home:hover::after {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
-.appoinment_btn {
+.send_btn {
   text-align: center;
 }
 /*----------------------------
@@ -6288,6 +6294,10 @@ blockquote {
 .menu-button {
   display: none;
 }
+.menu {
+  position: sticky;
+  top: 85px;
+}
 
 @media screen and (max-width: 992px) {
   .menu {
@@ -6356,4 +6366,133 @@ blockquote {
 .products_drp_list a {
   color: #fff;
   text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  /* height: 100%;
+  object-fit: cover; */
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper_thumb .swiper-slide {
+  opacity: 0.7;
+}
+
+.swiper_thumb .swiper-slide:hover {
+  opacity: 1;
+}
+
+.swiper_thumb .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #26aef9;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #26aef9;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px #26aef9;
+  z-index: 9;
+}
+
+.swiper-button-next,
+.swiper-button-prev::after {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.swiper-button-prev,
+.swiper-button-next::after {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.swiper-button-next:hover {
+  color: #ccc;
+  background: #26aef9;
+}
+
+.swiper-button-prev:hover {
+  color: #ccc;
+  background: #26aef9;
+}
+.product_details .myRow {
+  gap: 23px;
+}
+.myContainer {
+  padding: 30px 0px;
+}
+.summary .myRow {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.summary .myRow span,
+.summary .myRow h3 {
+  width: 50%;
+}
+
+.summary .order {
+  display: flex;
+  justify-content: end;
+}
+
+.order_product_form .input_inner .message_inp {
+  height: 150px;
+}
+
+@media screen and (max-width: 757px) {
+  form .order_product_form .myRow {
+    gap: 20px;
+  }
 }
