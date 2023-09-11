@@ -126,20 +126,19 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  align-items: center;
 }
-.main__menu > li > a {
+.main__menu > li a,
+.lang_list li a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   color: #001430;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  height: 99px;
-  line-height: 68px;
   padding: 0 18px;
   position: relative;
   text-transform: capitalize;
@@ -168,7 +167,8 @@
 .logo {
   padding: 30px 0px;
 }
-ul.main__menu > li:hover > a {
+ul.main__menu > li:hover > a,
+.lang_list li:hover a {
   color: #26aef9;
 }
 
@@ -539,7 +539,8 @@ ul.main__menu > li:hover > a {
   visibility: visible;
   top: 100%;
 }
-.main__menu ul.dropdown li {
+.main__menu ul.dropdown li,
+.lang_list li {
   border-bottom: 1px solid #f4f4f4;
   display: block;
 }
@@ -776,7 +777,7 @@ ul.main__menu > li:hover > a {
 .slider-content h1,
 .slider-content h2 {
   color: #ffffff;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 95px;
 }
@@ -4527,9 +4528,9 @@ footer.footer_area {
   background: #26aef9;
   color: white;
   transition: all 0.5s ease-in-out;
-  border-radius: 24px;
   font-size: 15px;
   margin: 0 auto;
+  display: block;
 }
 .singel_project .read_more a:hover {
   background-color: #001430;
@@ -4919,7 +4920,8 @@ a.ui-state-default {
   margin-left: 10px;
   color: #fff;
 }
-.header_transparent .main__menu > li > a {
+.header_transparent .main__menu > li > a,
+.lang_list li a {
   padding: 0 24px;
 }
 .doctor_search_content_inner {
@@ -6495,4 +6497,122 @@ blockquote {
   form .order_product_form .myRow {
     gap: 20px;
   }
+}
+.languages {
+  position: relative;
+}
+.languages ul {
+  z-index: 2;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  position: absolute;
+  right: -32px;
+  top: 40px;
+  background: white;
+}
+.languages ul li {
+  padding: 4px 8px;
+}
+.languages ul.show {
+  max-height: 100px;
+}
+.lang_list li.active a,
+.offcanvas-menu li:last-child li.active a {
+  color: #26aef9;
+}
+.faq_section .myContainer {
+  text-align: center;
+}
+.accordion {
+  margin-top: 25px;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px;
+  text-align: left;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded="true"] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
 }
