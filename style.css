@@ -215,20 +215,16 @@ ul.main__menu > li:hover > a,
 .ht__header__top__right {
   padding: 12px 0px;
 }
-.ht__header__top__right .social_icon > a i.zmdi-twitter {
-  color: #26aef9;
-}
-.ht__header__top__right .social_icon > a i.zmdi-pinterest {
-  color: #bd081b;
-}
-.ht__header__top__right .social_icon > a i.zmdi-google-plus {
-  color: #ea4335;
-}
+
 .ht__header__top__right .social_icon > a i.zmdi-whatsapp {
   color: #20b872;
 }
 .ht__header__top__right .social_icon > a:hover {
   opacity: 0.7;
+}
+.ht__header__top__right img {
+  width: 18px;
+  height: 18px;
 }
 .main__menu__nav {
   display: -webkit-box;
@@ -781,7 +777,8 @@ ul.main__menu > li:hover > a,
   font-weight: bold;
   line-height: 95px;
 }
-.slider-content.slider-text-animation > a {
+.slider-content.slider-text-animation > a,
+.singel_project .read_more a {
   background: #001430 none repeat scroll 0 0;
   border-radius: 24px;
   color: #ffffff;
@@ -795,7 +792,8 @@ ul.main__menu > li:hover > a,
   transition: all 0.5s ease-in-out;
   position: relative;
 }
-.slider-content.slider-text-animation > a::before {
+.slider-content.slider-text-animation > a::before,
+.singel_project .read_more a::before {
   background: rgba(0, 0, 0, 0) -webkit-gradient(
       linear,
       left top,
@@ -817,7 +815,9 @@ ul.main__menu > li:hover > a,
   width: 100%;
   z-index: -1;
 }
-.slider-content.slider-text-animation > a:hover::before {
+
+.slider-content.slider-text-animation > a:hover::before,
+.singel_project .read_more a:hover::before {
   opacity: 1;
 }
 .slider-active.owl-carousel .owl-nav > div:hover {
@@ -894,8 +894,13 @@ ul.main__menu > li:hover > a,
   margin-top: 0;
 }
 
-.slider-content.slider-text-animation > a:hover {
+.slider-content.slider-text-animation > a:hover,
+.singel_project .read_more a:hover {
   background: inherit;
+}
+.singel_project .read_more a:hover {
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, #26aef9 0%, #22f285 100%) repeat scroll 0 0;
 }
 .slider-wrapper {
   background-attachment: scroll;
@@ -1775,6 +1780,7 @@ a.order_btn {
 }
 a.load_more {
   margin: 0 auto;
+  text-align: center;
 }
 .tab-content > .tab-pane.active {
   display: block;
@@ -2361,6 +2367,14 @@ a.order_btn:hover:after {
 }
 .htc__blog__content .blog_post__meta {
   padding-left: 40px;
+  justify-content: space-between;
+  padding: 0px 23px;
+}
+.htc__blog__content .blog_post__meta > a {
+  color: #606060;
+}
+.htc__blog__content .blog_post__meta > a:hover {
+  opacity: 0.6;
 }
 .htc__blog__content {
   padding: 32px 0 30px;
@@ -3780,15 +3794,22 @@ h2.psy__blog__title {
   width: 100%;
 }
 .address {
-  background: #fafafa none repeat scroll 0 0;
+  /* background:  none repeat scroll 0 0; */
+  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(
+      left,
+      #26aef9 0%,
+      #22f285 100%
+    ) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, #26aef9 0%, #22f285 100%) repeat scroll 0 0;
   padding: 60px 82px;
   text-align: center;
   border-radius: 13px;
 }
 .address__icon i {
-  border: 1px solid #757575;
+  border: 1px solid white;
   border-radius: 100%;
-  color: #606060;
+  color: white;
   font-size: 24px;
   height: 46px;
   line-height: 46px;
@@ -3823,8 +3844,9 @@ h2.psy__blog__title {
   display: -ms-flexbox;
   display: flex;
 }
-.address__details > p a {
-  color: #001430;
+.address__details > p a,
+.address__details > p {
+  color: white;
 }
 .address__details > p a:hover {
   color: #26aef9;
@@ -4522,19 +4544,16 @@ footer.footer_area {
   text-align: center;
 }
 .singel_project .read_more a {
-  padding: 13px 10px;
   color: black;
   font-weight: 600;
-  background: #26aef9;
   color: white;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-out 0s;
   font-size: 15px;
   margin: 0 auto;
   display: block;
+  border-radius: 0;
 }
-.singel_project .read_more a:hover {
-  background-color: #001430;
-}
+
 /*specialized doctor*/
 .specialized_doctor_title {
   -webkit-box-align: center;
@@ -4920,8 +4939,7 @@ a.ui-state-default {
   margin-left: 10px;
   color: #fff;
 }
-.header_transparent .main__menu > li > a,
-.lang_list li a {
+.header_transparent .main__menu > li > a {
   padding: 0 24px;
 }
 .doctor_search_content_inner {
@@ -6507,7 +6525,7 @@ blockquote {
   overflow: hidden;
   transition: all 0.3s linear;
   position: absolute;
-  right: -32px;
+  right: -8px;
   top: 40px;
   background: white;
 }
@@ -6520,6 +6538,14 @@ blockquote {
 .lang_list li.active a,
 .offcanvas-menu li:last-child li.active a {
   color: #26aef9;
+}
+.main__menu .lang_list li {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+}
+.main__menu .lang_list a {
+  padding: 0;
 }
 .faq_section .myContainer {
   text-align: center;
