@@ -13,6 +13,13 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.html" />
 
     <!-- All css files are included here. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/plugin.css" />
     <link rel="stylesheet" href="css/default.css" />
@@ -35,26 +42,27 @@
               <div class="col-lg-6 col-md-8 col-12">
                 <div class="ht__header__top__left">
                   <p>
-                    <span><i class="zmdi zmdi-phone"></i></span>+88 011 2225 555
+                    <a href="tel://61280932400"
+                      ><i class="fa-solid fa-phone"></i> + 61 23 8093 3400</a
+                    >
                   </p>
                   <p>
-                    <span><i class="zmdi zmdi-alarm-check"></i></span>Mon to sat
-                    07 am to 12 am
+                    <a href="mailto:info@Panagea.com"
+                      ><i class="fa-solid fa-envelope"></i> info@Panagea.com</a
+                    >
                   </p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-4 col-12">
                 <div class="ht__header__top__right">
                   <div class="social_icon">
-                    <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                    <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
-
-                    <a href="#"
-                      ><img
-                        src="./images/Instagram_logo.svg.png"
-                        alt="instagram"
-                    /></a>
-                    <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                   </div>
                 </div>
               </div>
@@ -83,7 +91,7 @@
                       <a href="index.html">Ana Sayfa</a>
                     </li>
                     <li class="drop">
-                      <a href="#">Ürünler</a>
+                      <span class="dropdown_text">Ürünler</span>
                       <ul class="dropdown">
                         <li><a href="products.html">Ürün tipi 1</a></li>
                         <li>
@@ -104,9 +112,7 @@
                       <a href="contact-us.html">İletişim</a>
                     </li>
                     <li class="drop languages">
-                      <span>
-                        <a href="#" class="lang_btn"> &#127760; TR</a>
-                      </span>
+                      <span class="lang_btn dropdown_text"> &#127760; TR </span>
                       <ul class="lang_list">
                         <li class="active">
                           <a href="#">TR</a>
@@ -506,69 +512,76 @@
         <div class="footer_top">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3 col-md-6">
+              <div class="col-lg-4">
                 <div class="single_footer widget footer_1">
+                  <div class="widget site-info-widget">
+                    <div class="footer-logo">
+                      <img src="./images/logo/logo-white.png" alt="logo" />
+                    </div>
+                    <p>"Medical blabla" was established in February 2023.</p>
+                    <ul class="social-links">
+                      <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+
+                      <li>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                      </li>
+
+                      <li>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="single_footer widget footer_2">
                   <div class="single_footer_title">
-                    <h2>Links</h2>
+                    <h2>Bağlantılar</h2>
                   </div>
                   <div class="single_footer_menu">
                     <ul>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Appoinment</a></li>
-                      <li><a href="#">Features</a></li>
-                      <li><a href="#">Inquary</a></li>
+                      <li><a href="#">Ürünler</a></li>
+                      <li><a href="#">Cerrahi aletler</a></li>
+                      <li><a href="#">Teknik servis</a></li>
+                      <li><a href="#">Hakkımızda</a></li>
+                      <li><a href="#">İletişim</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
-                <div class="single_footer widget footer_2">
-                  <div class="single_footer_title">
-                    <h2>Solutions</h2>
-                  </div>
-                  <div class="single_footer_menu">
-                    <ul>
-                      <li><a href="#">Aging And addiction</a></li>
-                      <li><a href="#">Back pain relief</a></li>
-                      <li><a href="#">Have Trouble Sleep</a></li>
-                      <li><a href="#">Therapy at Home</a></li>
-                      <li><a href="#">Bent Fingers</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
+              <div class="col-lg-4 col-sm-12">
                 <div class="single_footer widget footer_3">
                   <div class="single_footer_title">
-                    <h2>Support</h2>
-                  </div>
-                  <div class="single_footer_menu">
-                    <ul>
-                      <li><a href="#">Contact us</a></li>
-                      <li><a href="#">Care Help Line</a></li>
-                      <li><a href="#">Support</a></li>
-                      <li><a href="#">Support</a></li>
-                      <li><a href="#">Site map</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-6">
-                <div class="single_footer widget footer_4">
-                  <div class="single_footer_title">
-                    <h2>Contact</h2>
+                    <h2>İletişim</h2>
                   </div>
                   <div class="single_footer_desc">
-                    <p>125, Las Vegus, Main City, Street lane, USA</p>
                     <p>
-                      +12345 365 789 <br />
-                      +01235 789 654
+                      <span><i class="fa-solid fa-location-dot"></i> </span>
+                      <span> 125, Las Vegus, Main City, Street lane, USA </span>
                     </p>
                     <p>
-                      info@example.com<br />
-                      www.example.com
+                      <a href="tel://61280932400"
+                        ><i class="fa-solid fa-phone"></i> + 61 23 8093 3400</a
+                      >
+                    </p>
+                    <p>
+                      <a href="mailto:info@Panagea.com"
+                        ><i class="fa-solid fa-envelope"></i>
+                        info@Panagea.com</a
+                      >
                     </p>
                   </div>
                 </div>
@@ -582,13 +595,12 @@
               <div class="col-12">
                 <div class="copyright__content">
                   <div class="copyright__inner">
-                    <p>Copyright © <a href="#">curex</a> All Rights Reserves</p>
-                  </div>
-                  <div class="social__icon">
-                    <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                    <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                    <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-                    <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
+                    <p>
+                      Copyright ©
+                      <a href="https://khanbutagroup.az/"
+                        >Khan Buta Group MMC</a
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
