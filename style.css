@@ -6119,17 +6119,6 @@ blockquote {
   font-weight: 400;
   color: #999999;
 }
-.input_mobile_number .nice-select {
-  width: 110px;
-  padding-right: 0;
-}
-.input_mobile_number {
-  display: flex;
-}
-.input_mobile_number .number_text {
-  min-width: calc(100% - 110px);
-  border-left: 1px solid #dcdcdc;
-}
 .order_product_form .nice-select span.current {
   font-size: 14px;
   font-weight: 400;
@@ -6456,8 +6445,8 @@ blockquote {
 .swiper-button-prev {
   color: #26aef9;
   background: #fff;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   box-shadow: 0px 2px 2px #26aef9;
   z-index: 9;
@@ -6465,13 +6454,13 @@ blockquote {
 
 .swiper-button-next,
 .swiper-button-prev::after {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .swiper-button-prev,
 .swiper-button-next::after {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
 }
 
