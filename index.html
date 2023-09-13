@@ -99,8 +99,18 @@
                       <a href="#">Cerrahi aletler</a>
                     </li>
                     <li class="drop">
-                      <a href="service.html">Teknik servis</a>
+                      <span class="dropdown_text">Teknik servis</span>
+                      <ul class="dropdown">
+                        <li><a href="services.html">Servisler 1</a></li>
+                        <li>
+                          <a href="services.html">Servisler 2 </a>
+                        </li>
+                      </ul>
                     </li>
+                    <li class="drop">
+                      <a href="photo-gallery.html">Galeri</a>
+                    </li>
+
                     <li class="drop">
                       <a href="about-us.html">Hakkımızda</a>
                     </li>
@@ -188,11 +198,17 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#"><span>Cerrahei aletler</span></a>
+                    <a href="#"><span>Cerrahi aletler</span></a>
                   </li>
                   <li>
-                    <a href="service.html"><span>Teknik servisler</span></a>
+                    <a href="#"><span>Teknik servisler</span></a>
+                    <ul class="mobile-sub-menu">
+                      <li><a href="services.html">Servisler 1</a></li>
+                      <li><a href="services.html">Servisler 2</a></li>
+                    </ul>
                   </li>
+                  <li><a href="photo-gallery.html">Galeri</a></li>
+
                   <li><a href="about-us.html">Hakkımızda</a></li>
 
                   <li>
@@ -296,38 +312,38 @@
       <!-- slider-area-end -->
 
       <!-- Start Support Area -->
-      <section class="htc__support__area ptb--50 bg__white">
+      <section class="htc__support__area ptb--30 bg__white">
         <div class="container">
-          <div class="row">
-            <div class="htc__support__wrap clearfix">
-              <div class="about__right_image">
-                <img src="images/about/h_about.png" alt="" />
-              </div>
-              <div class="col-lg-7 col-sm-12 col-12">
-                <div class="htc__support__content">
-                  <div class="htc__support__inner">
-                    <h4 class="text--theme">About...</h4>
-                    <h2 class="text--theme">
-                      Sağlık, tüm mutlulukların kaynağıdır.
-                    </h2>
-                    <div class="htc__support__details">
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                      </p>
-                    </div>
-                    <div class="htc__spt__dai">
-                      <div class="play_video">
-                        <a href="https://www.youtube.com/watch?v=KeKNjVg22pc"
-                          ><i class="zmdi zmdi-play"></i
-                        ></a>
-                        <span>Play This Video</span>
-                      </div>
+          <div class="row myRow">
+            <div class="col-lg-7 col-sm-12 col-12">
+              <div class="htc__support__content">
+                <div class="htc__support__inner">
+                  <h4 class="text--theme">About...</h4>
+                  <h2 class="text--theme">
+                    Sağlık, tüm mutlulukların kaynağıdır.
+                  </h2>
+                  <div class="htc__support__details">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                  </div>
+                  <div class="htc__spt__dai">
+                    <div class="play_video">
+                      <a href="https://www.youtube.com/watch?v=KeKNjVg22pc"
+                        ><i class="zmdi zmdi-play"></i
+                      ></a>
+                      <span>Play This Video</span>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 col-12">
+              <div class="about__right_image">
+                <img src="images/about/h_about.png" alt="about" />
               </div>
             </div>
           </div>
@@ -336,11 +352,11 @@
       <!-- End Support Area -->
 
       <!-- Start Products Area -->
-      <section class="htc__gallery__area gallery--1 pt--100 pb--50">
+      <section class="htc__gallery__area gallery--1 pt--40 pb--40">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="section__title text-center pb--50">
+              <div class="section__title text-center pb--40">
                 <h2 class="title__line text--theme">Ürünler</h2>
               </div>
             </div>
@@ -350,14 +366,18 @@
             <div class="col-lg-3 col-md-6 col-12">
               <div class="singel_project mb--30">
                 <div class="project_img">
-                  <a href="#">
+                  <a href="product-details.html">
                     <img src="./images/FRE-300x285.png" alt="Cardiology Icon" />
                   </a>
                 </div>
                 <div class="project_content">
-                  <h3><a href="#">Medikal gaz sistemleri aksesuarları</a></h3>
+                  <h3>
+                    <a href="product-details.html"
+                      >Medikal gaz sistemleri aksesuarları</a
+                    >
+                  </h3>
                   <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
+                    <a href="product-details.html">Devamını oku</a>
                   </div>
                 </div>
               </div>
@@ -365,14 +385,74 @@
             <div class="col-lg-3 col-md-6 col-12">
               <div class="singel_project mb--30">
                 <div class="project_img">
-                  <a href="#">
+                  <a href="product-details.html">
+                    <img src="./images/indir-4.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="product-details.html"
+                      >Tansiyon Manşon ve Hortumları</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="product-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="product-details.html">
+                    <img
+                      src="./images/indir-300x285.jpg"
+                      alt="Cardiology Icon"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="product-details.html"
+                      >Basınç İnfüzyon Manşonları</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="product-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="product-details.html">
+                    <img src="./images/FRE-300x285.png" alt="Cardiology Icon" />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="product-details.html"
+                      >Medikal gaz sistemleri aksesuarları</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="product-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="product-details.html">
                     <img src="./images/indir-4.jpg" alt="" />
                   </a>
                 </div>
                 <div class="project_content">
                   <h3><a href="#">Tansiyon Manşon ve Hortumları</a></h3>
                   <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
+                    <a href="product-details.html">Devamını oku</a>
                   </div>
                 </div>
               </div>
@@ -380,7 +460,7 @@
             <div class="col-lg-3 col-md-6 col-12">
               <div class="singel_project mb--30">
                 <div class="project_img">
-                  <a href="#">
+                  <a href="product-details.html">
                     <img
                       src="./images/indir-300x285.jpg"
                       alt="Cardiology Icon"
@@ -388,9 +468,13 @@
                   </a>
                 </div>
                 <div class="project_content">
-                  <h3><a href="#">Basınç İnfüzyon Manşonları</a></h3>
+                  <h3>
+                    <a href="product-details.html"
+                      >Basınç İnfüzyon Manşonları</a
+                    >
+                  </h3>
                   <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
+                    <a href="product-details.html">Devamını oku</a>
                   </div>
                 </div>
               </div>
@@ -398,86 +482,46 @@
             <div class="col-lg-3 col-md-6 col-12">
               <div class="singel_project mb--30">
                 <div class="project_img">
-                  <a href="#">
+                  <a href="product-details.html">
+                    <img
+                      src="./images/indir-300x285.jpg"
+                      alt="Cardiology Icon"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="product-details.html"
+                      >Basınç İnfüzyon Manşonları</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="product-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="product-details.html">
                     <img src="./images/FRE-300x285.png" alt="Cardiology Icon" />
                   </a>
                 </div>
                 <div class="project_content">
-                  <h3><a href="#">Medikal gaz sistemleri aksesuarları</a></h3>
+                  <h3>
+                    <a href="product-details.html"
+                      >Medikal gaz sistemleri aksesuarları</a
+                    >
+                  </h3>
                   <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="singel_project mb--30">
-                <div class="project_img">
-                  <a href="#">
-                    <img src="./images/indir-4.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="project_content">
-                  <h3><a href="#">Tansiyon Manşon ve Hortumları</a></h3>
-                  <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="singel_project mb--30">
-                <div class="project_img">
-                  <a href="#">
-                    <img
-                      src="./images/indir-300x285.jpg"
-                      alt="Cardiology Icon"
-                    />
-                  </a>
-                </div>
-                <div class="project_content">
-                  <h3><a href="#">Basınç İnfüzyon Manşonları</a></h3>
-                  <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="singel_project mb--30">
-                <div class="project_img">
-                  <a href="#">
-                    <img
-                      src="./images/indir-300x285.jpg"
-                      alt="Cardiology Icon"
-                    />
-                  </a>
-                </div>
-                <div class="project_content">
-                  <h3><a href="#">Basınç İnfüzyon Manşonları</a></h3>
-                  <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="singel_project mb--30">
-                <div class="project_img">
-                  <a href="#">
-                    <img src="./images/FRE-300x285.png" alt="Cardiology Icon" />
-                  </a>
-                </div>
-                <div class="project_content">
-                  <h3><a href="#">Medikal gaz sistemleri aksesuarları</a></h3>
-                  <div class="read_more">
-                    <a href="product.html">Devamını oku</a>
+                    <a href="product-details.html">Devamını oku</a>
                   </div>
                 </div>
               </div>
             </div>
             <!-- End Single Gallery -->
-            <a href="#" class="load_more">Daha fazla</a>
+            <a href="products.html" class="load_more">Daha fazla</a>
           </div>
         </div>
       </section>
@@ -591,7 +635,201 @@
         </div>
       </div>
       <!--special Banner end-->
+      <!-- Start Services Area -->
+      <section class="htc__gallery__area gallery--1 pt--40 pb--40">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section__title text-center pb--40">
+                <h2 class="title__line text--theme">Teknik Servisler</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Start Single Gallery -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/succes-3.png"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >Anxiety disorder affects human life very badly</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/5.jpg"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >One Lorem ipsum dolor sit amet, consectetuı</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/7.jpg"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >ltra nanoparticles kill cancer cells in unusual wayı</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/9.jpg"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >Believe it or not its just me Come and listen</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/succes-3.png"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >Anxiety disorder affects human life very badly</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/5.jpg"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >One Lorem ipsum dolor sit amet, consectetuı</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/7.jpg"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >ltra nanoparticles kill cancer cells in unusual wayı</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="singel_project mb--30">
+                <div class="project_img">
+                  <a href="service-details.html">
+                    <img
+                      src="images/blog/latest_post/9.jpg"
+                      alt="blog images"
+                    />
+                  </a>
+                </div>
+                <div class="project_content">
+                  <h3>
+                    <a href="service-details.html"
+                      >Believe it or not its just me Come and listen</a
+                    >
+                  </h3>
+                  <div class="read_more">
+                    <a href="service-details.html">Devamını oku</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- End Single Gallery -->
+            <a href="services.html" class="load_more">Daha fazla</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Area -->
       <!--Specialized Doctor start-->
       <!-- <div class="specialized_doctor pt--80">
         <div class="container">
@@ -721,11 +959,11 @@
       </div> -->
       <!--Specialized Doctor end-->
       <!--Our brand section -->
-      <div class="our_brand_section ptb--50">
+      <div class="our_brand_section">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="section__title text-center pb--40">
+              <div class="section__title text-center pt--30">
                 <h2 class="title__line text--theme">Ortaklarımız</h2>
               </div>
             </div>
@@ -780,7 +1018,7 @@
       </div>
       <!--Our brand section end-->
       <!-- Start Blog Area -->
-      <section class="htc__blog__area home-blog bg__white ptb--50">
+      <section class="htc__blog__area home-blog bg__white ptb--30">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -823,7 +1061,7 @@
                         </div>
                       </div>
                     </div>
-                    <a href="#">Devamını oku..</a>
+                    <a href="#">Devamını oku</a>
                   </div>
                 </div>
               </div>
@@ -858,7 +1096,7 @@
                         </div>
                       </div>
                     </div>
-                    <a href="#">Devamını oku..</a>
+                    <a href="#">Devamını oku</a>
                   </div>
                 </div>
               </div>
@@ -894,12 +1132,13 @@
                         </div>
                       </div>
                     </div>
-                    <a href="#">Devamını oku..</a>
+                    <a href="#">Devamını oku</a>
                   </div>
                 </div>
               </div>
             </div>
             <!-- End single Blog -->
+            <a href="products.html" class="load_more">Daha fazla</a>
           </div>
         </div>
       </section>
@@ -977,11 +1216,14 @@
                   </div>
                   <div class="single_footer_menu">
                     <ul>
-                      <li><a href="#">Ürünler</a></li>
+                      <li><a href="products.html">Ürünler</a></li>
                       <li><a href="#">Cerrahi aletler</a></li>
-                      <li><a href="#">Teknik servis</a></li>
-                      <li><a href="#">Hakkımızda</a></li>
-                      <li><a href="#">İletişim</a></li>
+                      <li><a href="services.html">Teknik servis</a></li>
+                      <li>
+                        <a href="photo-gallery.html">Fotoğraf galerisi</a>
+                      </li>
+                      <li><a href="about-us.html">Hakkımızda</a></li>
+                      <li><a href="contact-us.html">İletişim</a></li>
                     </ul>
                   </div>
                 </div>

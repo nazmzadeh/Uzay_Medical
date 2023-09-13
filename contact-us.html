@@ -24,9 +24,6 @@
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-
-    <!-- Modernizr JS -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
 
   <body>
@@ -102,8 +99,18 @@
                       <a href="#">Cerrahi aletler</a>
                     </li>
                     <li class="drop">
-                      <a href="service.html">Teknik servis</a>
+                      <span class="dropdown_text">Teknik servis</span>
+                      <ul class="dropdown">
+                        <li><a href="services.html">Servisler 1</a></li>
+                        <li>
+                          <a href="services.html">Servisler 2 </a>
+                        </li>
+                      </ul>
                     </li>
+                    <li class="drop">
+                      <a href="photo-gallery.html">Galeri</a>
+                    </li>
+
                     <li class="drop">
                       <a href="about-us.html">Hakkımızda</a>
                     </li>
@@ -194,12 +201,29 @@
                     <a href="#"><span>Cerrahei aletler</span></a>
                   </li>
                   <li>
-                    <a href="service.html"><span>Teknik servisler</span></a>
+                    <a href="#"><span>Teknik servisler</span></a>
+                    <ul class="mobile-sub-menu">
+                      <li><a href="services.html">Servisler 1</a></li>
+                      <li><a href="services.html">Servisler 2</a></li>
+                    </ul>
                   </li>
+                  <li><a href="photo-gallery.html">Galeri</a></li>
+
                   <li><a href="about-us.html">Hakkımızda</a></li>
 
                   <li>
                     <a href="contact-us.html"><span>İletişim</span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="lang_btn"> &#127760; TR</a>
+                    <ul class="mobile-sub-menu">
+                      <li class="active">
+                        <a href="#">TR</a>
+                      </li>
+                      <li>
+                        <a href="#">ENG</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -238,7 +262,7 @@
           <div class="row">
             <div class="col-12">
               <div class="bradcaump__title text-center">
-                <h2 class="bradcaump-title">Contact Us</h2>
+                <h2 class="bradcaump-title">İLETİŞİM</h2>
               </div>
             </div>
           </div>
@@ -247,7 +271,7 @@
       <!-- End Bradcaump area -->
 
       <!-- Start Contact Area -->
-      <section class="htc__contact__area bg__white pt--30 pb--15">
+      <section class="htc__contact__area bg__white pb--15">
         <div class="container">
           <div class="row contact__addres__wrapper">
             <!-- Start Single Addrss -->
@@ -293,7 +317,17 @@
         <!-- Start Google Map -->
         <div class="htc__google__map">
           <div class="map-contacts">
-            <div id="googleMap"></div>
+            <div id="googleMap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.684698691247!2d49.85880900000001!3d40.41583519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087fef7fe59b7%3A0xb9c6e2896390e2fb!2zMjU0IMaPaG3JmWQgUsmZY8mZYmxpLCBCYWvEsQ!5e0!3m2!1sru!2saz!4v1694521699504!5m2!1sru!2saz"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
         <!-- End Google Map -->
@@ -498,9 +532,6 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-    <!-- Google Map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmCVTjRI007pC1Yk2o2d_EhgkjTsFVN8"></script>
-    <script src="js/map.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

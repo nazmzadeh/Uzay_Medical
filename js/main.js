@@ -228,7 +228,7 @@ function toggleLangs() {
   }
 }
 const langBtn = document.querySelector(".languages .lang_btn");
-langBtn.onclick = () => { toggleLangs() }
+if (langBtn) langBtn.onclick = () => { toggleLangs() }
 
 
 
