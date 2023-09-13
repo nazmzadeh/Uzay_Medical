@@ -402,6 +402,7 @@
                                 type="text"
                                 placeholder="Adınız ve Soyadınız"
                                 name="name_and_surname"
+                                required
                               />
                             </div>
                           </div>
@@ -411,6 +412,7 @@
                                 type="text"
                                 placeholder="Firma adınız"
                                 name="company_name"
+                                required
                               />
                             </div>
                           </div>
@@ -418,10 +420,14 @@
                         <div class="row myRow">
                           <div class="col-md-6">
                             <div class="input_inner">
-                              <input id="phone" type="tel" name="phone"
-                              value="+994 (__) ___-__-__"
-                              pattern="^\+994(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                              // phones at Belarus required>
+                              <input
+                                type="text"
+                                id="phone"
+                                name="phone"
+                                pattern="\+994 \d{2} \d{3} \d{2} \d{2}"
+                                placeholder="+994 XX XXX XX XX"
+                                required
+                              />
                             </div>
                           </div>
                           <div class="col-md-6">
@@ -430,6 +436,7 @@
                                 type="email"
                                 placeholder="Email adresiniz"
                                 name="email"
+                                required
                               />
                             </div>
                           </div>
@@ -441,6 +448,7 @@
                                 type="text"
                                 placeholder="Adres"
                                 name="address"
+                                required
                               />
                             </div>
                           </div>
@@ -450,6 +458,7 @@
                                 type="number"
                                 placeholder="Ürün adedi"
                                 name="product_count"
+                                required
                               />
                             </div>
                           </div>
