@@ -169,6 +169,10 @@
 .logo {
   padding: 30px 0px;
 }
+.logo img {
+  width: 100%;
+  aspect-ratio: 183/39;
+}
 ul.main__menu > li:hover > a,
 .lang_list li:hover a,
 .main__menu li:hover .dropdown_text {
@@ -514,7 +518,7 @@ ul.main__menu > li:hover > a,
   opacity: 0;
   padding: 0;
   position: absolute;
-  top: 120%;
+  top: 40px;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   visibility: hidden;
@@ -539,7 +543,6 @@ ul.main__menu > li:hover > a,
 .main__menu li.drop:hover ul.dropdown {
   opacity: 1;
   visibility: visible;
-  top: 100%;
 }
 .main__menu ul.dropdown li,
 .lang_list li {
@@ -2356,9 +2359,17 @@ a.order_btn:hover:after,
 .ht__blog__thumb a {
   display: block;
 }
-.ht__blog__thumb a img {
+.left_grid .ht__blog__thumb a img {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  width: 100%;
+  aspect-ratio: 270/300;
+}
+.right_grid .ht__blog__thumb a img {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  aspect-ratio: 432/374;
 }
 .blog:hover .ht__blog__thumb a img {
   -webkit-transform: scale(1.2);
@@ -4691,11 +4702,14 @@ footer.footer_area {
 .blog__post_title > p {
   color: #001430;
   font-size: 16px;
-  line-height: 27px;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .blog__post_title {
   border-bottom: 1px solid #cdecfe;
-  margin-bottom: 28px;
   padding-bottom: 25px;
   padding-left: 40px;
   padding-right: 18px;
@@ -6407,7 +6421,9 @@ blockquote {
   align-items: center;
   cursor: pointer;
 }
-
+.swiper-slide .zoom_img {
+  width: 100%;
+}
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -6495,7 +6511,9 @@ blockquote {
 .summary .myRow h3 {
   width: 50%;
 }
-
+.summary h3 {
+  color: #20b872;
+}
 .summary .order {
   display: flex;
   justify-content: end;
@@ -6663,7 +6681,6 @@ blockquote {
 }
 .blog__post_title {
   border-bottom: 1px solid #cdecfe;
-  margin-bottom: 21px;
   padding-bottom: 5px;
   padding-left: 30px;
   padding-right: 30px;
@@ -6689,7 +6706,7 @@ blockquote {
   font-size: 19px;
   line-height: 26px;
 }
-.ht__blog__thumb img {
+.our_blog_area .ht__blog__thumb img {
   width: 100%;
   height: unset;
   aspect-ratio: 370/379;
@@ -7061,4 +7078,20 @@ blockquote {
 
 .read_more a {
   margin: 0;
+}
+
+.product_details .summary .myRow {
+  gap: 25px;
+  justify-content: flex-start;
+  display: flex;
+}
+.product_details .summary .contact a {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #20b872;
+  color: #20b872;
+}
+.product_details .summary .contact a:hover {
+  color: white;
+  background-color: #20b872;
 }

@@ -146,6 +146,7 @@
     animation: 'fade'
   });
 
+
 })(jQuery);
 
 const form = document.getElementById('contact-form');
@@ -270,5 +271,17 @@ if (openBtn) openBtn.addEventListener("click", function (event) {
 })
 
 
+var phoneInput = document.getElementById('phone-input');
 
+phoneInput.addEventListener('input', function (e) {
+  var cleanedValue = e.target.value.replace(/\D/g, '');
 
+  if (cleanedValue.length >= 11) {
+    var formattedValue = '+994 (' + cleanedValue.substring(3, 5) + ') ' +
+      cleanedValue.substring(5, 8) + '-' +
+      cleanedValue.substring(8, 10) + '-' + cleanedValue.substring(10, 12)
+    e.target.value = formattedValue;
+  } else {
+    e.target.value = cleanedValue;
+  }
+});

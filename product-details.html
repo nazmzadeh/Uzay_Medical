@@ -23,7 +23,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/plugin.css" />
     <link rel="stylesheet" href="css/default.css" />
@@ -366,7 +365,7 @@
               <div class="col-md-6 col-sm-12">
                 <div class="summary row myRow">
                   <h2>Basınç İnfüzyon Manşonları</h2>
-                  <h3 class="text-success">$ 999</h3>
+                  <h3>$ 999</h3>
                   <span>Ürün kodu : KV278.00</span>
                   <div class="lorem_text">
                     <p>
@@ -377,6 +376,18 @@
                       vitae laboriosam harum accusamus eveniet exercitationem,
                       molestias consequatur expedita dolorum.
                     </p>
+                  </div>
+                  <div class="myRow mt--10">
+                    <div class="contact">
+                      <a href="whatsapp://send?text=Hello !&phone=+994551234567"
+                        ><i class="fa-brands fa-whatsapp"></i> Whatsapp ile</a
+                      >
+                    </div>
+                    <div class="contact">
+                      <a href="tel://61280932400"
+                        ><i class="fa-solid fa-phone"></i> Telefon ile</a
+                      >
+                    </div>
                   </div>
                   <!-- <div class="order">
                     <a href="#" class="order_btn">Sipariş ver</a>
@@ -422,11 +433,9 @@
                             <div class="input_inner">
                               <input
                                 type="text"
-                                id="phone"
-                                name="phone"
-                                pattern="\+994 \d{2} \d{3} \d{2} \d{2}"
-                                placeholder="+994 XX XXX XX XX"
-                                required
+                                id="phone-input"
+                                value="+994 "
+                                placeholder="(___) ___-__-__"
                               />
                             </div>
                           </div>
@@ -591,6 +600,7 @@
     <!-- Body main wrapper end -->
 
     <!-- jquery latest version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
