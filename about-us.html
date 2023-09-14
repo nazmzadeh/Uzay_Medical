@@ -271,11 +271,17 @@
       <!-- End Bradcaump area -->
 
       <!-- Start Support Area -->
-      <section class="htc__support__area bg__white about-page">
+      <section class="htc__support__area ptb--30 bg__white">
         <div class="container">
           <div class="row myRow">
             <div class="col-lg-7 col-sm-12 col-12">
               <div class="htc__support__content">
+                <div id="videoModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="videoContainer"></div>
+                  </div>
+                </div>
                 <div class="htc__support__inner">
                   <h4 class="text--theme">About...</h4>
                   <h2 class="text--theme">
@@ -291,7 +297,10 @@
                   </div>
                   <div class="htc__spt__dai">
                     <div class="play_video">
-                      <a href="https://www.youtube.com/watch?v=KeKNjVg22pc"
+                      <a
+                        href="https://www.youtube.com/watch?v=KeKNjVg22pc"
+                        id="openVideoModal"
+                        target="_self"
                         ><i class="zmdi zmdi-play"></i
                       ></a>
                       <span>Play This Video</span>
@@ -302,7 +311,7 @@
             </div>
             <div class="col-lg-5 col-sm-12 col-12">
               <div class="about__right_image">
-                <img src="images/about/h_about-2.png" alt="" />
+                <img src="images/about/h_about.png" alt="about" />
               </div>
             </div>
           </div>

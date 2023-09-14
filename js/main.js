@@ -5,7 +5,7 @@
  * Offcanvas: Menu Content
  **************************/
   function mobileOffCanvasMenu() {
-    var $offCanvasNav = $('.offcanvas-menu'),
+    let $offCanvasNav = $('.offcanvas-menu'),
       $offCanvasNavSubMenu = $offCanvasNav.find('.mobile-sub-menu');
 
     /*Add Toggle Button With Off Canvas Sub Menu*/
@@ -13,7 +13,7 @@
 
     /*Category Sub Menu Toggle*/
     $offCanvasNav.on('click', 'li a, .offcanvas-menu-expand', function (e) {
-      var $this = $(this);
+      let $this = $(this);
       if ($this.attr('href') === '#' || $this.hasClass('offcanvas-menu-expand')) {
         e.preventDefault();
         if ($this.siblings('ul:visible').length) {
@@ -38,7 +38,7 @@
 
   //Sticky Header
   $(window).on('scroll', function () {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
     if (scroll < 245) {
       $('#sticky-header-with-topbar').removeClass("scroll-header");
     } else {
@@ -120,17 +120,6 @@
     }
   });
 
-  //magnificPopup active
-  $('.play_video a,.play_button_inner > a').magnificPopup({
-    disableOn: 0,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: true,
-    fixedContentPos: false
-  });
-
-
   //Datepicker
   $('#datepicker,#doctor_calender').datepicker();
 
@@ -140,7 +129,7 @@
 
   //Blog Masonry activation
   $('.blog-masonry').imagesLoaded(function () {
-    var $grid = $('.blog-masonry').isotope({
+    let $grid = $('.blog-masonry').isotope({
       itemSelector: '.grid-item',
       percentPosition: true,
       masonry: {
@@ -248,4 +237,38 @@ if (items) {
 
   items.forEach(item => item.addEventListener('click', toggleAccordion));
 }
+
+let modal = document.getElementById("videoModal");
+let openBtn = document.getElementById("openVideoModal");
+let closeBtn = document.querySelector(".modal .close");
+let videoContainer = document.getElementById("videoContainer");
+
+if (openBtn) openBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  let iframe = document.createElement("iframe");
+  iframe.src = "https://www.youtube.com/embed/KeKNjVg22pc";
+  iframe.allowFullscreen = true;
+
+  if (videoContainer) {
+    videoContainer.innerHTML = "";
+
+    videoContainer.appendChild(iframe);
+  }
+
+  if (modal) {
+    modal.style.display = "block";
+    if (closeBtn) closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+    window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+})
+
+
+
 
