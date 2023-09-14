@@ -3794,7 +3794,6 @@ h2.psy__blog__title {
   20. Contact Area
 ----------------------------------------*/
 #googleMap {
-  height: 600px;
   width: 100%;
 }
 .address {
@@ -7019,7 +7018,7 @@ blockquote {
   margin-top: 22px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 993px) {
   .about__right_image img {
     display: none;
   }
@@ -7058,4 +7057,8 @@ blockquote {
 .modal iframe {
   width: 100%;
   aspect-ratio: 1.9;
+}
+
+.read_more a {
+  margin: 0;
 }
