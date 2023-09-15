@@ -7095,3 +7095,8 @@ blockquote {
   color: white;
   background-color: #20b872;
 }
+
+.htc__contact__area .myContainer {
+  height: 322px;
+  padding: 0;
+}
